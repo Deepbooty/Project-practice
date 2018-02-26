@@ -1,0 +1,19 @@
+@charset "utf-8";
+*{margin:0; padding:0;}
+body{font-size:12px; font-family:"Microsoft Yahei", "微软雅黑", verdana; color:#666;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none; border:none; background:none;}
+textarea{resize:none;}
+a{text-decoration:none; color:#333;}
+/*清除浮动*/
+.clearfix:after{content:""; display:block; clear:both;}
+.clearfix{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+.c {clear: both;}
+h1,h2,h3,h4,h5{font-weight:normal;}
+/*去掉a的下划线*/
+/*a{blr:expression(this.onFocus=this.blur())} /*if IE*/
+
+

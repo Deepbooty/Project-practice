@@ -1,0 +1,264 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>域名新闻</title>
+<link rel="icon" href="http://img.chaicp.com/jumi/user/60/2016101312184971548.ico" mce_href="http://img.chaicp.com/jumi/user/60/2016101312184971548.ico" type="image/x-icon" />
+<meta name="Keywords" content="聚米演示" />
+<meta name="Description" content="聚米演示" />
+<link rel="stylesheet" type="text/css" href="style/css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="style/css/base.css"/>
+<script type="text/javascript" src="style/js/jquery.js"></script>
+<script type="text/javascript" src="style/js/juqery.SuperSlide.js"></script>
+<script type="text/javascript" src="style/js/base.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="/jm_1/style/js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript" src="/jm_1/style/js/ie6Fixpng.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+<style>
+body {behavior: url("/jm_1/style/css/csshover.htc");}
+</style>
+<![endif]-->
+<script>
+	$(function(){
+		jQuery(".top_notice").slide({
+			mainCell:".bd ul",
+			autoPage:true,
+			effect:"top",
+			autoPlay:true
+			});
+		jQuery(".domainTab").slide({effect:"left",trigger:"click"});
+		});
+</script>
+</head>
+<body>
+	<div id="header">
+    	<!--top开始-->
+    	<div class="topBar">
+        	<div class="comWidth clearfix">
+            	<div class="leftArea clearfix">
+                	<!--语言切换开始-->
+               		<div class="m-language fl" id="lan">
+                		<p class="f-img-lan" style="background-position: 0px 0px;"><span></span></p>
+               		 	<div class="f-b-rlt">
+                    		<p kvalue="en-us" style="background-position: 0 -23px"></p>
+                    		<p kvalue="zh-hk" style="background-position: 0 -46px"></p>
+                            <p kvalue="zh-hk" style="background-position: 0 -69px"></p>
+                            <p kvalue="zh-hk" style="background-position: 0 -95px"></p>
+                            <p kvalue="zh-hk" style="background-position: 0 -121px"></p>
+                		</div>
+            		</div>
+                    <!--语言切换结束-->
+                    <div class="top_notice fl">
+                    	<div class="bd">
+                        	<i class="notice_icon"></i>
+                        	<ul class="infolist">
+                            	<li><a href="#">聚米网(www.jumi.com)域名正在内侧啦！</a></li>
+                                <li><a href="#">聚米网(www.jumi.com)域名正在内侧啦！</a></li>
+                                <li><a href="#">聚米网(www.jumi.com)域名正在内侧啦！</a></li>
+                                <li><a href="#">聚米网(www.jumi.com)域名正在内侧啦！</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightArea top_way">
+                	<span class="top_qq"><a href="#">356985452</a></span>
+                    服务热线：<span class="top_tel">400-997-2996</span>
+                </div>
+            </div>
+        </div>
+        <!--top--end-->
+        
+        <!--logo搜索框开始-->
+        <div class="logoBar">
+        	<div class="comWidth clearfix">
+            	<h1 class="logo fl">
+                	<a href="#"><img src="style/css/img/logo.png" width="154" height="58" alt="logo" /></a>
+                </h1>
+                <div class="search fr">
+                	<div id="search1">
+                    	<form action="" onsubmit="return checksearch()" class="clearfix">
+                            <input type="text" class="search_input" id="domainkey" name="bh" placeholder="请输入您感兴趣的域名" />
+                            <span class="secrch_tym" ym="a">
+                                淘域名<i class="b_icon"></i>
+                                 <div class="tym_drop">
+                                    <p class="tym_txt" ym="a">查域名</p>
+                                    <p class="tym_txt" ym="b">查Whois</p>
+                                </div>
+                            </span>
+                            <input type="submit" class="search_btn"  value="搜 索"/>
+                    	</form>
+                   	 <script>
+                   		function checksearch(){
+							var domain=$("#domainkey").val();
+							if(domain==""){
+								alert("请输入您感兴趣的域名");
+								return false;
+								}
+							else{
+								$("#domainkey").val(domain.replace(/。/g, '.'));
+								}
+							}
+                   </script>
+                    </div>
+                	<div id="search2" style="display:none;">
+                    	<input id="whoisdomain" class="search_input" type="text" onkeypress="if(event.keyCode==13) if($('#whoisdomain').val() == '请输入要查询whois的域名') alert('请输入要查询whois的域名'); else {$('#whoisdomain').val($('#whoisdomain').val().replace(/。/g, '.'));window.open('http://whois.juming.com/?'+$('#whoisdomain').val());}" onfocus="if(value=='请输入要查询whois的域名'){value = ''}" onblur="if(value==''){value='请输入要查询whois的域名'}" value="请输入要查询whois的域名" name="cha_ym">
+                        <span class="secrch_tym">
+                                淘域名<i class="b_icon"></i>
+                                 <div class="tym_drop">
+                                    <p class="tym_txt on" ym="a">查域名</p>
+                                    <p class="tym_txt" ym="b">查Whois</p>
+                                </div>
+                            </span>
+        <input type="button" class="search_btn" onclick="if($('#whoisdomain').val() == '请输入要查询whois的域名') alert('请输入要查询whois的域名'); else {$('#whoisdomain').val($('#whoisdomain').val().replace(/。/g, '.'));window.open('http://whois.juming.com/?'+$('#whoisdomain').val());return false;}"  value="查询"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--logo搜索框---end-->
+        
+       <!-- nav列表开始-->
+       <div class="navBar">
+       		<div class="comWidth">
+            	<ul class="navList clearfix">
+                	<li><a href="#" class="on">首页</a></li>
+                    <li><a href="#">域名挑选</a></li>
+                    <li><a href="#">域名资讯</a></li>
+                    <li><a href="#">交易方式</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+       </div>
+       <!-- nav列表--end-->
+       
+       
+    </div>
+	<!--主体内容部分-->
+	<div class="wrap">
+			<div class="location">
+				<div class="comWidth clearfix">
+					<p class="fl">当前位置：<a href="#" class="on">首页</a> &gt; <a href="#">搜索域名</a></p>
+					<span class="fr">服务器时间：<time>2016-12-02 16:05:29 </time>(CST +8:00)</span>
+				</div>
+			</div>
+			<div class="content comWidth clearfix">
+				<div class="newsLeft">
+					<div class="slider">
+						<div class="slider_tit">
+							<h2>CONTACT US<span>联系我们</span></h2>
+							<i class="add">+</i>
+						</div>
+						<div class="slider_cont">
+							<ul class="slider_list">
+								<li class="slider_item"><i class="user_icon"></i>Q  Q：365831683</li>
+								<li class="slider_item"><i class="phone_icon"></i>微 信：juming</li>
+								<li class="slider_item"><i class="tel_icon"></i>电 话：400-997-2996</li>
+								<li class="slider_item"><i class="url_icon"></i>网 站：demo.jumi.com</li>
+								<li class="slider_item"><i class="add_icon"></i>地 址：合肥市庐阳区财富广场</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="newsRight">
+					<div class="news">
+						<div class="news_tit clearfix">
+							<h3 class="fl">新闻资讯</h3>
+							<a href="#" target="_blank" class="more fr">了解更多<i class="r-icon"></i></a>
+							
+						</div>
+						<div class="news_cont">
+							<ul class="news_list">
+								<li class="clearfix">
+									<a href="#" target="_blank">马化腾马云收编草根网站 互联网大佬争夺站长</a>
+									<span class="date">2016-11-21</span>
+								</li>
+								<li class="clearfix">
+									<a href="#" target="_blank">马化腾马云收编草根网站 互联网大佬争夺站长</a>
+									<span class="date">2016-11-21</span>
+								</li>
+								<li class="clearfix">
+									<a href="#" target="_blank">马化腾马云收编草根网站 互联网大佬争夺站长</a>
+									<span class="date">2016-11-21</span>
+								</li>
+								<li class="clearfix">
+									<a href="#" target="_blank">马化腾马云收编草根网站 互联网大佬争夺站长</a>
+									<span class="date">2016-11-21</span>
+								</li>
+								<li class="clearfix">
+									<a href="#" target="_blank">马化腾马云收编草根网站 互联网大佬争夺站长</a>
+									<span class="date">2016-11-21</span>
+								</li>
+								<li class="clearfix">
+									<a href="#" target="_blank">马化腾马云收编草根网站 互联网大佬争夺站长</a>
+									<span class="date">2016-11-21</span>
+								</li>
+								<li class="clearfix">
+									<a href="#" target="_blank">马化腾马云收编草根网站 互联网大佬争夺站长</a>
+									<span class="date">2016-11-21</span>
+								</li>
+								<li class="clearfix">
+									<a href="#" target="_blank">马化腾马云收编草根网站 互联网大佬争夺站长</a>
+									<span class="date">2016-11-21</span>
+								</li>
+								<li class="clearfix">
+									<a href="#" target="_blank">马化腾马云收编草根网站 互联网大佬争夺站长</a>
+									<span class="date">2016-11-21</span>
+								</li>
+								<li class="clearfix">
+									<a href="#" target="_blank">马化腾马云收编草根网站 互联网大佬争夺站长</a>
+									<span class="date">2016-11-21</span>
+								</li>
+								<li class="clearfix">
+									<a href="#" target="_blank">马化腾马云收编草根网站 互联网大佬争夺站长</a>
+									<span class="date">2016-11-21</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--主体内容部分--end-->
+	<!--footer开始-->
+	<div class="footerBar">
+		<div class="comWidth footer clearfix">
+			<div class="footLogo fl">
+				<img src="style/images/f-logo.png" width="127" height="48" />
+				<h3 class="footerTel">400-997-2996</h3>
+				<a href="#" target="_blank" class="footerUrl">www.jumi.com</a>
+			</div>
+			<div class="footerCont fl clearfix">
+				<dl class="footer_item">
+					<dt>关于我们</dt>
+					<dd><a href="#" target="_blank">公司介绍</a></dd>
+					<dd><a href="#" target="_blank">最新动态</a></dd>
+					<dd><a href="#" target="_blank">媒体关注</a></dd>
+					<dd><a href="#" target="_blank">联系我们</a></dd>
+				</dl>
+				<dl class="footer_item">
+					<dt>友情链接</dt>
+					<dd><a href="#" target="_blank">聚名网</a></dd>
+					<dd><a href="#" target="_blank">百度</a></dd>
+					<dd><a href="#" target="_blank">阿里云</a></dd>
+					<dd><a href="#" target="_blank">阿里巴巴</a></dd>
+				</dl>
+				<dl class="footer_item">
+					<dt>版权信息</dt>
+					<dd><a href="#" target="_blank">www.juming.com</a></dd>
+					<dd>皖ICP备12013812号</dd>
+					<dd>皖公安备34010302000199号</dd>
+					<dd>Copyright&copy;2008-2018</dd>
+					<dd>聚名网 Limited, aLL Rights Reserved8</dd>
+				</dl>
+			</div>
+			<div class="footerCode fr">
+				<h4>微信关注 最新动态</h4>
+				<img src="style/images/codePic.jpg" width="115" height="114" alt="扫一扫" title="扫一扫关注我们"/>
+			</div>
+		</div>
+	</div>
+	<!--footer--end-->
+</body>
+</html>

@@ -1,0 +1,740 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>域名列表</title>
+<link rel="icon" href="http://img.chaicp.com/img/juming_ico.ico" mce_href="http://img.chaicp.com/img/juming_ico.ico" type="image/x-icon" />
+<meta name="Keywords" content="抢注,注册,买卖" />
+<meta name="Description" content="欢迎来到聚米网,带给您不同的体验." />
+<link rel="stylesheet" type="text/css" href="style/css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="style/css/base.css"/>
+<link rel="stylesheet" type="text/css" href="style/css/jquery-ui.css"/>
+<link rel="stylesheet" type="text/css" href="style/css/search.css"/>
+<link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+<script type="text/javascript" src="style/js/jquery.js"></script>
+<script type="text/javascript" src="style/js/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="style/js/jquery-ui.js"></script>
+<script type="text/javascript" src="style/js/search.js"></script>
+<script type="text/javascript" src="style/js/dialog/artdialog.js"></script>
+<script type="text/javascript" src="style/js/base.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="style/js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript" src="style/js/ie6Fixpng.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+<style>
+body {behavior: url("style/css/csshover.htc");}
+</style>
+<![endif]-->
+</head>
+<body>
+	<!--头部-->
+	<div id="header">
+		<!--top开始-->
+		<div class="top">
+			<div class="comWidth clearfix">
+				<div class="leftArea clearfix">
+					<span class="home fl">
+						<i class="home_icon"></i>
+						<a href="#" class="home_link">聚米首页</a>
+					</span>
+					<i class="radio_icon fl"></i>
+					<div id="topScroll" class="t-notice fl">
+						<div id="marquee1">
+							<a href="#"><font color="#ee4488">聚米网(www.jumi.com)域名米表正在内侧啦！ </font></a><br />
+							<a href="#"><font color="#0066cc">聚米网(www.jumi.com)域名米表正在内侧啦！ </font></a><br />
+							<a href="#"><font color="#77cc33">聚米网(www.jumi.com)域名米表正在内侧啦！ </font></a><br />
+							<a href="#"><font color="#ff8800">聚米网(www.jumi.com)域名米表正在内侧啦！ </font></a><br />
+							<a href="#"><font color="#66c">聚米网(www.jumi.com)域名米表正在内侧啦！ </font></a><br />
+						</div>
+						<div id="marquee2"></div>
+					</div>
+				</div>
+				<div class="rightArea">
+					<ul class="topList clearfix">
+						<li><i class="app_icon"></i><a href="#" target="_blank" class="app">手机版</a></li>
+						<li class="top_line">|</li>
+						<li>QQ：<a href="#" target="_blank" class="top_qq">22524057565</a></li>
+						<li class="top_line">|</li>
+						<li>邮箱：<a href="#" target="_blank" class="top_email">admin@juming.com</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--top--End!-->
+		
+		<!--nav导航开始-->
+		<div class="navBar">
+			<div class="comWidth clearfix">
+				<div class="logo fl">
+					<a href="/"><img src="style/images/logo.png" width="252" height="50" alt="logo" /></a>
+				</div>
+				<ul class="nav fl clearfix">
+					<li><a href="#" target="_blank" class="on">首页</a></li>
+					<li><a href="#" target="_blank">域名挑选</a></li>
+					<li><a href="#" target="_blank">域名资讯</a></li>
+					<li><a href="#" target="_blank">交易方式</a></li>
+					<li><a href="#" target="_blank">关于我们</a></li>
+					<li><a href="#" target="_blank">联系我们</a></li>
+				</ul>
+				<div class="nav_tel fr">
+					<span>400-997-2996</span>
+				</div>
+			</div>
+		</div>
+		<!--nav导航--End-->
+		
+		<!--banner幻灯片开始-->
+		<div class="banner">
+			<ul class="img clearfix">
+				<li><a href="#"><img src="style/images/banner_01.jpg" /></a></li>
+				<li><a href="#"><img src="style/images/banner_01.jpg" /></a></li>
+				<li><a href="#"><img src="style/images/banner_01.jpg" /></a></li>
+				<li><a href="#"><img src="style/images/banner_01.jpg" /></a></li>
+			</ul>
+			<ul class="num"></ul>
+			<div class="arrowBtn prev">&lt;</div>
+			<div class="arrowBtn next">&gt;</div>
+			<div class="searchBar">
+				<div class="search comWidth">
+					<div class="serch_box clearfix">
+						<div id="search1">
+							<form action="" onsubmit="return checksearch()" class="clearfix">
+								<div class="search_glass fl"><i class="search_icon"></i></div>
+								<input type="text" class="search_input fl" id="domainkey" name="bh" placeholder="请输入关键字" />
+								<span class="search_tym fl">
+									淘域名<i class="tym_icon" ym="a"></i>
+									<div class="search_drop">
+										<p class="tym_txt" ym="a">查域名</p>
+										<p class="tym_txt" ym="b">查Whois</p>
+									</div>
+								</span>
+								<input type="submit" class="search_btn fr" value="搜 索" />
+							</form>
+							<script>
+								function checksearch(){
+									var domain=$("#domainkey").val();
+									if(domain==""){
+										alert("请输入您感兴趣的域名");
+										return false;
+										}
+									else{
+										$("#domainkey").val(domain.replace(/。/g, '.'));
+										}
+									}
+						   </script>
+						</div>
+						<div id="search2" style="display:none;" class="clearfix">
+							<div class="search_glass fl"><i class="search_icon"></i></div>
+							<input type="text" id="whoisdomain" class="search_input fl" onkeypress="if(event.keyCode==13) if($('#whoisdomain').val() == '请输入要查询whois的域名') alert('请输入要查询whois的域名'); else {$('#whoisdomain').val($('#whoisdomain').val().replace(/。/g, '.'));window.open('http://whois.juming.com/?'+$('#whoisdomain').val());}" onfocus="if(value=='请输入要查询whois的域名'){value = ''}" onblur="if(value==''){value='请输入要查询whois的域名'}" value="请输入要查询whois的域名" name="cha_ym" />
+								<span class="search_tym fl">
+									淘域名<i class="tym_icon" ym="a"></i>
+									<div class="search_drop">
+										<p class="tym_txt" ym="a">查域名</p>
+										<p class="tym_txt" ym="b">查Whois</p>
+									</div>
+								</span>
+							<input type="button" class="search_btn fr" onclick="if($('#whoisdomain').val() == '请输入要查询whois的域名') alert('请输入要查询whois的域名'); else {$('#whoisdomain').val($('#whoisdomain').val().replace(/。/g, '.'));window.open('http://whois.juming.com/?'+$('#whoisdomain').val());return false;}"  value="查 询" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--banner幻灯片--End-->
+		
+		<!--平台优势开始-->
+		<div class="advan">
+			<div class="comWidth">
+				<ul class="advan_list clearfix">
+					<li class="advan_item clearfix">
+						<i class="advan_icon advan_icon1 fl"></i>
+						<div class="advan_txt fl">
+							<h4 class="txt">7x24小时</h4>
+							<span class="txt">全年无休</span>
+						</div>
+					</li>
+					<li class="advan_item clearfix">
+						<i class="advan_icon advan_icon2 fl"></i>
+						<div class="advan_txt fl">
+							<h4 class="txt">一对一服务</h4>
+							<span class="txt">经济人跟进协助</span>
+						</div>
+					</li>
+					<li class="advan_item clearfix">
+						<i class="advan_icon advan_icon3 fl"></i>
+						<div class="advan_txt fl">
+							<h4 class="txt">交易额领先</h4>
+							<span class="txt">年交易额过数亿元</span>
+						</div>
+					</li>
+					<li class="advan_item last clearfix">
+						<i class="advan_icon advan_icon4 fl"></i>
+						<div class="advan_txt fl">
+							<h4 class="txt">4年服务经验</h4>
+							<span class="txt">服务超5万客户</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--平台优势--End-->
+	</div>
+	
+	<!--主体-->
+	<div id="wrap">
+		<div class="content comWidth">
+			<div class="location">
+				当前位置：<a href="#" class="on">首页</a> &gt; <a href="#">域名搜索</a>
+			</div>
+			<div class="domainBar clearfix">
+				<!--域名列表左开始-->
+				<div class="domainLeft fl">
+					<div class="g-bd d_screen">
+						<div class="m-seacrhs">
+							<div class="g-row m-seacrh">
+								<div class="sea-title"><h1 style="font-size:15px;">域名搜索</h1></div>
+								<div class="s-terms">
+								 <form method="post" id="searchForm" action="">
+									<input type="hidden" name="pageNumber"  value="1"/>
+									<input type="hidden" name="orderProperty" value=""/>
+									<input type="hidden" name="direction" value=""/>
+									<input type="hidden" name="suffix" value=""/>
+									<input type="hidden" name="type"  value="" />
+									<div class="m-keyword m_mt10">
+										<div class="name">域名关键字：</div>
+										<div class="condition">
+											<div class="hd-wrap-input">
+												<label class="hd-icon"></label>
+												<input class="hd-input" type="text" name="name"  value="" placeholder="请输入域名、描述" style="width:355px;">
+				<!-- 								<input type="submit" value="查询" class="hd-label"> -->
+											</div>
+											<label class="f-label checked">
+												<input type="radio" nu="0" name="positionType" value="1" checked="checked"><span>包含</span>
+											</label>
+											<label class="f-label ">
+												<input type="radio" nu="0" name="positionType" value="2" ><span>开头</span>
+											</label>
+											<label class="f-label ">
+												<input type="radio" nu="0" name="positionType" value="3" ><span>结尾</span>
+											</label>
+										</div>
+									</div>
+									<div class="m-keyword">
+										<div class="name">排除关键字：</div>
+										<div class="condition">
+											<div class="hd-wrap-input">
+												<label class="hd-icon"></label>
+												<input class="hd-input" type="text" name="excludeName" value=""  placeholder="请输入域名、描述"  style="width: 355px;">
+				<!-- 								<input type="submit" value="查询" class="hd-label"> -->
+											</div>
+											<label class="f-label checked">
+												<input type="radio" nu="0" name="excludeNamePositionType" value="1" checked="checked"><span>包含</span>
+											</label>
+											<label class="f-label ">
+												<input type="radio" nu="0" name="excludeNamePositionType" value="2" ><span>开头</span>
+											</label>
+											<label class="f-label ">
+												<input type="radio" nu="0" name="excludeNamePositionType" value="3" ><span>结尾</span>
+											</label>
+										</div>
+									</div>
+									<div class="m-keyword" id="m-hz">
+										<div class="name">后缀：</div>
+										<div class="condition f-hz">
+											<span class="active">全部</span>
+											<span idx="com">com</span>
+											<span idx="cn">cn</span>
+											<span idx="net">net</span>
+											<span idx="com.cn">com.cn</span>
+											<span idx="cc">cc</span>
+											<span idx="other">其它后缀</span>
+											<input type="hidden" name="hz" value="">
+										</div>
+									</div>
+									<div class="m-keyword">
+										<div class="name">价格：</div>
+										<div class="condition">
+											<div class="f-slider">
+												<div style="width: 380px; height: 7px; margin-top: 7px;background:#999999;border-radius: 3px;" id="domian-pri" name="pri" 
+													class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+													<div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%;"></div>
+													<span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span>
+													<span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;"></span>
+												</div>
+												<ol>
+													<li style="width: 40px;">0</li>
+													<li style="width: 40px;">500</li>
+													<li>1000</li>
+													<li>&nbsp;&nbsp;2万</li>
+													<li>&nbsp;&nbsp;5万</li>
+													<li>&nbsp;10万</li>
+													<li>&nbsp;&nbsp;20万</li>
+													<li style="width: 42px;">&nbsp;&nbsp;50万</li>
+													<li style="text-align: right;">不限&nbsp;</li>
+												</ol>
+											</div>
+											<div class="f-range-sure u-fr u_ml13">
+												<span class="u-ipt-c">
+													<input type="text" class="number" val="" name="startPrice"  value="">
+												</span>
+												<span class="u_ver_line"></span>
+												<span class="u-ipt-c">
+													<input type="text" class="number" val="" name="endPrice"  value="">
+												</span>
+				<!-- 	                            <input type="submit" value="确定" class="u-btn2 f-songti"> -->
+											</div>
+										</div>
+									 </div>
+									 <div class="m-keyword">
+										<div class="name">域名长度：</div>
+										<div class="condition">
+											<div class="f-slider">
+												<div style="width: 380px; height: 7px; margin-top: 7px;background:#999999;border-radius: 3px;" id="domian-len" name="len" 
+													class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+													<div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%;"></div>
+													<span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span>
+													<span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;"></span>
+												</div>
+												<ol>
+													<li>1</li>
+													<li>2</li>
+													<li>3</li>
+													<li>4</li>
+													<li style="width: 46px; padding-left: 1px;">5</li>
+													<li style="width: 45px; padding-left: 2px;">6</li>
+													<li style="width: 45px; padding-left: 2px;">7</li>
+													<li style="width: 38px; padding-left: 3px;">8</li>
+													<li>不限</li>
+												</ol>
+											</div>
+											<div class="f-range-sure u-fr">
+												<span class="u-ipt-c">
+													<input type="text" class="number" val="" name="startLength"  value="">
+												</span>
+												<span class="u_ver_line"></span>
+												<span class="u-ipt-c">
+													<input type="text" class="number" val="" name="endLength"  value="">
+												</span>
+				<!-- 	                             <input type="submit" value="确定" class="u-btn2 f-songti"> -->
+											</div>
+										</div>
+									</div>
+									 <div class="m-keyword" name="ty" style="height: auto;">
+										<div class="name">类型：</div>
+										<div class="f-style f-hz">
+											<div class="f-contions" id="m-style" >
+												<span class="active">全部</span>
+												<span lt="STRUCTURE">结构</span>
+												<span lt="SPELL">拼音</span>
+												<span lt="SHAPE">品型</span>
+												<span lt="SPECIAL">特殊</span>
+											</div>
+											<div class="s-bg-f9" id="data_style" name="ty">
+												<div class="f-result" idx="1" style="display: none;">
+													<span idx="all" tag="all">全部</span>
+													<span idx="LETTER">全字母 </span>
+													<span idx="NUMBER">全数字</span>
+													<span idx="MIXED">杂</span>
+												</div>
+												<div class="f-result"  idx="2" style="display: none;">
+													<span idx="all" tag="all">全部</span>
+													<span idx="ONE">单拼</span>
+				<!-- 									<span idx="ONE_TWO">单拼且双拼</span> -->
+													<span idx="TWO">双拼</span>
+				<!-- 									<span idx="TWO_THREE">双拼且三拼</span> -->
+													<span idx="THREE">三拼</span>
+				<!-- 									<span idx="THREE_FOUR">三拼且四拼</span> -->
+													<span idx="FOUR">四拼</span>
+												 </div>
+												<div class="f-result" idx="3" style="display: none;">
+													<span idx="all" tag="all">全部</span>
+													<span idx="ABBB">ABBB</span>
+													<span idx="AABB">AABB</span>
+													<span idx="ABAB">ABAB</span>
+													<span idx="ABBA">ABBA</span>
+													<span idx="AAAB">AAAB</span>
+												 </div>
+												 <div class="f-result"  idx="4" style="display: none;">
+													<span idx="all" tag="all">全部</span>
+													<span idx="CVCV">CVCV</span>
+													<span idx="VCVC">VCVC</span>
+													<span idx="PCB">省市开头</span>
+												 </div>
+											</div>
+										</div>
+									</div>
+									<div class="m-keyword"  style="text-align: center; padding-left: 0;"> 
+										 <input type="button" value="搜&nbsp;&nbsp;&nbsp;&nbsp;索" id="d_domainSearch"  class="d_domainSearch d_btn d_btn_red">
+									 </div>
+									</form>
+								</div>
+								
+								
+							</div>
+						</div>
+	 				</div>
+					<div class="d_content">
+						<div class="d_tit clearfix">
+							<div class="d_sort fl">
+								排序：
+								<span class="on">默认<i class="top_icon d_down"></i></span>
+								<span>价格<i class="top_icon"></i></span>
+								<span>长度<i class="top_icon"></i></span>
+							</div>
+							<div class="d_pattern fr">
+								<span><i class="grid_icon grid_on"></i>网格模式</span>
+								<span class="on"><i class="list_icon list_on"></i>列表模式</span>
+							</div>
+						</div>
+						<div class="d_list">
+							<ul class="d_tab">
+								<table style="width:100%; border-spacing:0; border-collapse:collapse;">
+								<thead>
+									<tr>
+										<th width="80">编号</th>
+										<th width="160">域名</th>
+										<th width="60">长度</th>
+										<th>含义</th>
+										<th width="115">价格</th>
+										<th width="60">查看</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+									<tr>
+										<td align="center">1</td>
+										<td class="d_name">diqiu.com</td>
+										<td>5</td>
+										<td>地球</td>
+										<td class="d_price">￥600,000</td>
+										<td><a href="#" class="d_detail">详细</a></td>
+									</tr>
+								</tbody>
+							</table>
+							</ul>
+						</div>
+						<div class="page clearfix">
+							<div class="page_list ">
+								<a>上一页</a>
+								<a href="#" class="on">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+								<a href="#">5</a>
+								<a>下一页</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--域名列表左--End-->
+				<div class="domainRight fr">
+					<!--联系我们开始-->
+					<div class="r-model mb_20">
+						<div class="r_tit"><h3>联系方式</h3></div>
+						<div class="r_contact">
+							<a href="#" class="headPic"><img src="style/images/headpic.jpg" width="98" height="98" alt="用户头像" /></a>
+							<p>联 系 人：聚名客服</p>
+							<p>会员级别：<span class="vip_icon">vip高级会员</span></p>
+							<p>信 用 度： <span class="star_icon"></span><span class="star_icon"></span><span class="star_icon"></span><span class="star_icon"></span><span class="star_icon"></span></p>
+							<p class="r_way">联系方式：<a href="#" target="_blank" class="e_icon"></a><a class="w_icon"></a><a href="#" target="_blank" class="p_icon"></a><a href="tencent://message/?uin=365831683&amp;Site=在线咨询&amp;Menu=yes" target="_blank" class="q_icon"></a></p>
+							<a href="tencent://message/?uin=365831683&amp;Site=在线咨询&amp;Menu=yes" target="_blank" class="qq_btn">QQ在线，立即咨询</a>
+						</div>
+					</div>
+					<!--联系我们--End-->
+					<!--精品域名推荐开始-->
+					<div class="r-model">
+						<div class="r_tit clearfix">
+							<h3 class="fl">精品域名推荐</h3>
+							<a href="#" target="_blank" class="more fr">更多&gt;&gt;</a>
+						</div>
+						<div class="r_cont">
+							<ul class="r_list">
+								<li class="r_item">
+									<a href="#" target="_blank" class="r_dname">52.com</a>
+									<p class="clearfix">
+										<span class="r_dintro fl">我爱,极品2数.cn</span>
+										<span class="r_dprice fr">￥260,000</span>
+									</p>
+								</li>
+								<li class="r_item">
+									<a href="#" target="_blank" class="r_dname">52.com</a>
+									<p class="clearfix">
+										<span class="r_dintro fl">我爱,极品2数.cn</span>
+										<span class="r_dprice fr">￥260,000</span>
+									</p>
+								</li>
+								<li class="r_item">
+									<a href="#" target="_blank" class="r_dname">52.com</a>
+									<p class="clearfix">
+										<span class="r_dintro fl">我爱,极品2数.cn</span>
+										<span class="r_dprice fr">￥260,000</span>
+									</p>
+								</li>
+								<li class="r_item">
+									<a href="#" target="_blank" class="r_dname">52.com</a>
+									<p class="clearfix">
+										<span class="r_dintro fl">我爱,极品2数.cn</span>
+										<span class="r_dprice fr">￥260,000</span>
+									</p>
+								</li>
+								<li class="r_item">
+									<a href="#" target="_blank" class="r_dname">52.com</a>
+									<p class="clearfix">
+										<span class="r_dintro fl">我爱,极品2数.cn</span>
+										<span class="r_dprice fr">￥260,000</span>
+									</p>
+								</li>
+								<li class="r_item">
+									<a href="#" target="_blank" class="r_dname">52.com</a>
+									<p class="clearfix">
+										<span class="r_dintro fl">我爱,极品2数.cn</span>
+										<span class="r_dprice fr">￥260,000</span>
+									</p>
+								</li>
+								<li class="r_item">
+									<a href="#" target="_blank" class="r_dname">52.com</a>
+									<p class="clearfix">
+										<span class="r_dintro fl">我爱,极品2数.cn</span>
+										<span class="r_dprice fr">￥260,000</span>
+									</p>
+								</li>
+								<li class="r_item">
+									<a href="#" target="_blank" class="r_dname">52.com</a>
+									<p class="clearfix">
+										<span class="r_dintro fl">我爱,极品2数.cn</span>
+										<span class="r_dprice fr">￥260,000</span>
+									</p>
+								</li>
+								<li class="r_item">
+									<a href="#" target="_blank" class="r_dname">52.com</a>
+									<p class="clearfix">
+										<span class="r_dintro fl">我爱,极品2数.cn</span>
+										<span class="r_dprice fr">￥260,000</span>
+									</p>
+								</li>
+								<li class="r_item">
+									<a href="#" target="_blank" class="r_dname">52.com</a>
+									<p class="clearfix">
+										<span class="r_dintro fl">我爱,极品2数.cn</span>
+										<span class="r_dprice fr">￥260,000</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--精品域名推荐--End-->
+				</div>
+			</div>
+			<!--交易流程开始-->
+			<div class="model">
+				<div class="process">
+					<div class="hd">
+						<i class="hd_icon"></i>
+						<h3 class="hd_tit pro" style="color:#333;">交易流程</h3>
+						<i class="hd_icon"></i>
+					</div>
+					<div class="proCont">
+						<ul class="proList clearfix">
+							<li class="pro_icon pro_icon1"></li>
+							<li class="pro_arrow"></li>
+							<li class="pro_icon pro_icon2"></li>
+							<li class="pro_arrow"></li>
+							<li class="pro_icon pro_icon3"></li>
+							<li class="pro_arrow"></li>
+							<li class="pro_icon pro_icon4"></li>
+							<li class="pro_arrow"></li>
+							<li class="pro_icon pro_icon5"></li>
+							<li class="pro_arrow"></li>
+							<li class="pro_icon pro_icon6"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--交易流程--End-->
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footerBar">
+			<div class="comWidth clearfix">
+				<div class="footLeft fl">
+					<p>友情链接：<a href="#" target="_blank">聚名网</a>&nbsp;|&nbsp;<a href="#" target="_blank">百度</a>&nbsp;|&nbsp;<a href="#" target="_blank">阿里云</a></p>
+					<p>版权所有：<a href="#" target="_blank">www.juming.com</a> CopyRight &copy; 2008-2018 聚名网 Limited,All Rights Reserved</p>
+					<p>
+						备案号：皖ICP备12013812号 
+						<a href="#" target="_blank" class="record"><img src="style/images/guo.png" width="18" height="20" align="absmiddle" /> 皖公网安备 34010302000199号</a>
+					</p>
+					<p>本站由 聚米网 <a href="#" target="_blank">www.jumi.com</a> 强力驱动</p>
+				</div>
+				<div class="footRight fr clearfix">
+					<div class="footInfo fl">
+						<h3 class="foot_tel">400-997-2996</h3>
+						<p>服务热线：周一至周五(9:00-22:30)</p>
+						<a href="#" class="foot_qq"><i class="foot_icon"></i>QQ在线,点击咨询</a>
+					</div>
+					<div class="code fl">
+						<img src="style/images/code.jpg" width="111" height="110" alt="二维码" title="扫一扫,关注我们" />
+						<span class="code_txt">扫一扫,关注我们</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="comWidth footPic">
+				<img src="style/images/footPic.png" width="654" height="37" />
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

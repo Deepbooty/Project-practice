@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7,IE=9,IE=10" />
+<script src="style/js/jquery.js" type="text/javascript"></script>
+<link href="style/css/base.css" rel="stylesheet" type="text/css">
+<title>购物车</title>
+<!--[if IE 6]>
+<script type="text/javascript" src="style/js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript" src="style/js/ie6Fixpng.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div id="headerBar">
+    	<div class="topBar">
+        	<div class="comWidth">
+            	<div class="leftArea">
+                	<a href="#" class="collect">收藏慕课</a>
+                </div>
+                <div class="rightArea">
+                	欢迎来到慕课网！<a href="#">[登录]</a> <a href="#">[免费注册]</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="logoBar">
+        	<div class="comWidth">
+            	<div class="logo fl">
+                	<a href="#"><img src="style/images/logo.png" alt="慕课网" /></a>				
+                </div>
+                <div class="stepBox fr">
+                	<div class="step"></div>
+                    <ul class="step_text">
+                    	<li class="s01 active">我的购物车</li>
+                        <li class="s02 active">填写核对订单</li>
+                        <li class="s03">订单提交成功</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="shoppingCar comWidth">
+    	<div class="shopping_item">
+        	 <div class="shoping_titBox">
+            	<h3 class="shopping_tit">收货地址</h3>
+            </div>	
+            <div class="shopping_cont padding_shop">
+           		<ul class="shopping_list">
+                	<li>
+                    	<span class="shopping_list_text"><em>*</em>选择地区：</span>
+                    	<div class="select">
+                            <h3>海淀区五环内</h3><span></span>
+                            <ul class="show_select">
+                                <li>均衡教派</li>
+                                <li>影流</li>
+                                <li>水晶之衡</li>
+                                <li>艾欧尼亚</li>
+                            </ul>
+                    	</div>
+                    </li>
+                    <li>
+                    	<span class="shopping_list_text"><em>*</em>详细地址：</span>
+                        <input type="text" class="input input_b"  value="最多输入26个汉字">
+                    </li>
+                    <li>
+                    	<span class="shopping_list_text"><em>*</em>收 货 人：</span>
+                        <input type="text" class="input" value="最多输入10个汉字">
+                    </li>
+                    <li>
+                    	<span class="shopping_list_text"><em>*</em>手   机：</span>
+                        <input type="text" class="input" value="如1234567"><span class="shop_tel">&nbsp;或固定电话：</span><input type="text" class="input input_s" value="区号">&nbsp;-&nbsp;<input type="text" class="input input_m" value="电话号码">&nbsp;-&nbsp;<input type="text" class="input input_m" value="分机号(可选)">
+                    </li>
+                    <li><input type="button" class="affirm"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hr_25"></div>
+        <div class="shopping_item">
+        	 <div class="shoping_titBox">
+            	<h3 class="shopping_tit">支付方式</h3>
+            </div>	
+            <div class="shopping_cont padding_shop">
+           		<ul class="shopping_list">
+                	<li><input type="radio" class="radio" id="r1"><label for="r1" class="r1">微信支付</label><i class="weChat"></i>用微信扫一扫就能支付！</li>
+                    <li><input type="radio" class="radio" id="r2"><label for="r2" class="r1">货到付款</label>送货上门后再付款，使用现金或刷卡！</li>
+                </ul>
+            </div>
+        </div>
+        <div class="hr_25"></div>
+        <div class="shopping_item">
+            <div class="shoping_titBox">
+            	<h3 class="shopping_tit">发票信息</h3>
+            </div>
+        	<div class="shopping_cont padding_shop">
+           		<ul class="shopping_list">
+                	<li><input type="checkbox" class="cbox" id="c1"><label for="c1">需要发票</label></li>
+                    <li>
+                    	<span class="shopping_list_text"><em>*</em>发票类型：</span>
+                        <select class="sel">
+                        	<option>商业零售发票</option>
+                            <option>个人零售发票</option>
+                            <option>公司零售发票</option>
+                        </select>
+                    </li>
+                    <li>
+                    	<span class="shopping_list_text"><em>*</em>发票抬头：</span>
+                        <select class="sel sel_s">
+                        	<option>商业</option>
+                            <option>个人</option>
+                            <option>公司</option>
+                        </select>
+                        <input type="text" class="input" value="发票人">
+                    </li>
+                    <li class="c_btn">
+                    	<input type="button" class="save_btn">
+                        <input type="button" class="cancel_btn">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hr_25"></div>
+        <div class="shopping_item">
+        	<div class="shoping_titBox clearfix">
+            	<h3 class="shopping_tit fl">送货清单</h3>	
+                <a href="#" class="backCar fr">返回购物车修改</a>
+            </div>
+        	
+            <div class="shopping_cont pb_10 ">
+           		<div class="cart_inner">
+                	<div class="cart_head clearfix">
+                    	<div class="cart_item t_name">商品名称</div>
+                        <div class="cart_item t_width">单价</div>
+                        <div class="cart_item t_width">返现</div>
+                        <div class="cart_item t_width">数量</div>
+                        <div class="cart_item t_total">小计</div>
+                    </div>
+                    <div class="cart_cont clearfix">
+                    	<div class="cart_item t_name">
+                        	<div class="cart_shopInfo  clearfix">
+                            	<img src="style/images/bingo.jpg" alt="bingo">
+                                <div class="cart_shopInfo_cont">
+                                	<p class="cart_link"><a href="#">Hisense 海信 BCD-202D 202升 三门冰箱 (银色)</a></p>
+                                    <p class="cart_info">[赠品]保鲜盒·抽真空保鲜盒-海信冰洗赠品</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart_item t_width">￥1459.00</div>
+                        <div class="cart_item t_width">￥0.00</div>
+                        <div class="cart_item t_width">1</div>
+                        <div class="cart_item t_total t_red">￥1459.00</div>
+                    </div>
+                    <div class="cart_msg">若您对包裹有特殊要求，请在此留言</div>
+                    <div class="cart_prom"><i class="cart_prom_icon"></i>抱歉，以下商品暂时不能购买，已帮您自动在本次结算中剔除并扣减对应金额，您可以购买其它商品：</div>
+                    <div class="cart_cont bt_no clearfix">
+                    	<div class="cart_item t_name">
+                        	<div class="cart_shopInfo  clearfix">
+                            	<img src="style/images/paper.jpg" alt="bingo">
+                                <div class="cart_shopInfo_cont">
+                                	<p class="cart_link"><a href="#">Hisense 海信 BCD-202D 202升 三门冰箱 (银色)</a></p>
+                                    <p class="cart_info">[赠品]保鲜盒·抽真空保鲜盒-海信冰洗赠品</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="hr_25"></div>
+        <div class="shopping_item">
+        	<h3 class="shopping_tit">订单结算</h3>	
+            <div class="shopping_cont padding_shop clearfix">
+           		<div class="cart_count fr">
+                	<div class="cart_rmb"><i>总计：</i><span>¥1459.00</span></div>
+                    <div class="cart_btnBox">
+                    	<input type="button" class="cart_btn" value="提交订单">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hr_25"></div>
+    <div class="footer">
+    	<p><a href="#">慕课简介</a><i>|</i><a href="#">慕课公告</a><i>|</i><a href="#">招纳贤士</a><i>|</i><a href="#">联系我们</a><i>|</i>客服热线：400-675-1234</p>
+        <p>Copyright © 2006 - 2014 慕课版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>
+        <p class="web"><a href="#"><img src="style/images/url.png" alt="logo"></a><a href="#"><img src="style/images/url.png" alt="logo"></a><a href="#"><img src="style/images/url.png" alt="logo"></a><a href="#"><img src="style/images/url.png" alt="logo"></a></p>
+    </div>
+
+</body>
+</html>
+
+

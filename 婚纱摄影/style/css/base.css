@@ -1,0 +1,189 @@
+/**********Public**********/
+*{margin:0; padding:0; list-style:none;}
+body{font-family:"宋体"; font-size:14px; width:100%;}
+ul{padding:0;}
+a{text-decoration:none;}
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear:both; zoom:1; height:0;}
+img{border:none; max-width:100%;}
+h3{font-size:14px; font-family:"宋体";}
+
+/**********header**********/
+#header{width:100%;background:url(../../images/topBg.png);}
+/********top********/
+.top{width:1240px; margin:0 auto; /*background:rgba(0,255,255,0.5);*/ overflow:hidden;}
+h1#logo{width:250px; height:75px; background:url(../../images/logo.png) no-repeat center;}
+h1#logo a{width:100%; height:100%; display:block; text-indent:-999px;}
+.topRight{width:990px; height:75px; text-align:right;}
+.topRight p{color:#acaaa5; margin-right:25px; padding:0 8px;}
+.topRight p a{color:#acaaa5; padding-right:4px;}
+.search{margin-right:25px; margin-top:25px;}
+.search label{color:#7a7a7a;}
+.search input{background:#f7f7f7; border:1px solid #e4e4e4; width:110px; height:24px; border-radius:3px;}
+.search button{width:45px; height:25px; font-weight:bold;background:#f5f6f6; color:#f38559; cursor:pointer; border-radius:3px; border:2px solid #e2e3e3;}
+
+/********nav********/
+.nav{width:1240px;margin:0 auto; }
+.subnav{width:1200px; height:40px;margin:0 auto;}
+.subnav li {float:left;}
+.subnav li a{font-size:14px;display:block;color:#7a7a7a; text-align:center;font-weight:bold; height:40px; width:109px; line-height:40px;background:url(../../images/line.png) no-repeat right center ;}
+.subnav li a:hover{background:#85e4fc; border-radius:4px;}
+
+/*******banner*******/
+#banner{width:1240px; height:415px; margin:0 auto;overflow:hidden; position:relative;}
+.slides li{width:100%; height:100%;}
+.shadowBg{width:100%; height:105px; background:rgba(0,0,0,0.3);position:absolute;bottom:0;}
+.shadowMenu{width:80%; height:105px;background:rgba(0,0,0,0.5); margin:0 auto;}
+.shadowMenu li{float:left; width:25%; height:105px;}
+.shadowMenu li img{margin:15px 0 0 25px;}
+.shadowTxt{width:130px;height:105px; margin:18px 0 0 15px; color:#c5c5c5;}
+.shadowTxt h3{font-size:14px; font-family:"宋体";}/*focus*/
+.shadowTxt p{font-size:12px; padding-top:8px; line-height:160%;}
+
+/**********wrap**********/
+#wrap{width:100%; }
+#container{width:1240px; margin:0 auto; /*background:rgba(153,0,255,0.4);*/ }
+/****纳兰写真*portrait****/
+.portrait{width:875px; float:left;}
+.portraitTitle{width:100%; height:35px; border-bottom:1px solid #f0f0f0;}
+.portraitTitle h2{width:195px; height:35px; background:url(../../images/portrait.png) no-repeat center ; text-indent:-9999px;}
+.more{display:block; width:70px; height:35px; margin-right:32px;background:url(../../images/moreIcon.png) no-repeat right 17px;text-indent:-9999px;}
+.portraitList{width:100%; height:195px; background:url(../../images/ulBg.png) no-repeat right 0; margin-top:10px;}
+.portraitList li{float:left; width:170px; height:195px; text-align:center; margin-right:1px;}
+.portraitList li img{margin-top:3px; border:3px solid #e6e6e6; border-radius:3px; box-shadow:0 2px 12px #7d7d7d;}
+.portraitList li p{ padding-top:5px;color:#a7a4a4; font-weight:bold; font-family:"宋体";}
+
+/****纳兰活动*active****/
+.active{width:345px; float:right;}
+.activeTitle{width:100%; height:35px; border-bottom:1px solid #f0f0f0; background:url(../../images/animal.png) no-repeat 180px 13px;}
+.activeTitle h2{width:74px; height:35px; background:url(../../images/active.png) no-repeat center ; text-indent:-9999px;}
+.activeTitle a{display:block; width:70px; height:35px;background:url(../../images/moreIcon.png) no-repeat right 17px;text-indent:-9999px; }
+.activeAny{width:90%; margin:0 auto;}
+.activeAny h4{font-weight:100; color:#f86e9e; margin-top:5px; font-size:15px; text-align:center;}
+.activeAny p{color:#3a3a3a; line-height:160%;}
+.Aug{margin-top:5px;}
+.Aug li{ width:100%; height:62px; background:url(../../images/Aug.png) no-repeat 0 center;  border-bottom:1px solid #b9b9b9; color:#7d7d7d;}
+.Aug a{text-indent:80px; display:block; padding-top:12px; color:#7d7d7d;}
+.Aug span{text-indent:88px; display:block; padding-top:3px;}
+
+/****纳兰婚纱*workShow****/
+.workShow{width:100%; margin-top:12px;}
+.workShowTitle{width:100%; height:35px; border-bottom:3px solid #e8e8e8;}
+.workShowTitle h2{width:192px; height:35px; background:url(../../images/workshow.png) no-repeat center; text-indent:-9999px;  margin-left:12px;}
+.workShowTitle a{width:50px; height:20px; display:block; background:url(../../images/juiceMore.png) no-repeat; margin-right:20px; text-indent:-9999px; margin-top:10px;}
+.workShowFigure{width:225px; height:365px;text-align:center;  margin-top:5px;}
+.workShowFigure img{margin-top:6px; border:3px solid #e7e6e2; border-radius:4px;}
+.workShowFigure p{width:210px; height:37px;  margin:0 auto; margin-top:-5px; background:#f2f2f1; color:#5e5c59; line-height:37px; font-weight:bold; letter-spacing:3px;}
+.workShowPic{width:980px; height:365px;  margin-top:5px; border-bottom:3px solid #eeeeee;}
+.workShowPic li{float:left; width:230px; margin-right:15px; margin-top:6px;  padding-bottom:-2px; text-align:center;}
+.workShowPic li img{border:2px solid #ebebeb; border-radius:4px;} 
+.workShowPic li p{width:211px; height:30px; background:#f3f3f3; margin:0 auto; margin-top:-4px; line-height:30px;}
+.workShowPic li p a{float:left; margin-left:8px; color:#747070; font-size:12px; font-weight:bold;} 
+.workShowPic li p span{float:right;margin-right:8px; color:#747070; font-size:12px; font-family:"微软雅黑";}
+
+
+/***********内容左部分**container-left**********/
+#container-left{width:850px; margin-top:12px; }
+/****商业摄影*business****/
+.business{width:100%;  border-bottom:3px solid #f2f2f2;}
+.bussinessTitle{width:100%; height:35px;background:url(../../images/titleBg.png) no-repeat bottom;}
+.bussinessTitle h2{width:154px; height:35px; background:url(../../images/bussiness.png) no-repeat center; text-indent:-9999px; margin-left:12px;}
+.bussinessTitle a{width:50px; height:20px; display:block;background:url(../../images/juiceMore.png) no-repeat; margin-right:65px; text-indent:-9999px; margin-top:8px;}
+.bussinessMenu{width:850px; margin-top:18px;}
+.bussinessMenu li{float:left; width:425px;}
+.bussinessMenu li img{width:97px; height:117px; border:2px solid #f0f0f0; border-radius:3px;}
+.MenuCont{width:310px; height:117px;}
+.MenuCont h4{ color:#f86e9e;font-size:14px; font-family:"微软雅黑";}
+.MenuCont span{color:#606060;font-size:13px; padding-top:3px; display:block;}
+.MenuCont p{font-size:12px; color:#afafaf; line-height:180%; padding-right:35px; text-indent:2em;}
+.bussinessMenu li a{padding-bottom:25px;display:block; widht:50px; height:20px; background:url(../../images/pinkMore.png) no-repeat; text-indent:-9999px; margin-top:-10px; margin-left:350px;}
+
+/****纳兰礼服*showDress****/
+.showDress{width:100%;margin-top:15px;}
+.showDressTitle{width:100%; height:35px;background:url(../../images/titleBg.png) no-repeat bottom;}
+.showDressTitle h2{width:201px; height:35px; background:url(../../images/showDress.png) no-repeat center; text-indent:-9999px; margin-left:12px;}
+.showDressTitle a{width:50px; height:20px; display:block;background:url(../../images/juiceMore.png) no-repeat; margin-right:65px; text-indent:-9999px; margin-top:8px;}
+.showDressMenu{width:850px; margin-top:18px;}
+.showDressMenu li{float:left; width:170px; position:relative;}
+.showDressMenu li img{width:137px; height:191px; border:1px solid #b1b1b1; border-bottom:none; margin-left:15px;}
+.showDressText{width:137px; height:35px; background:#fff6f6; margin:0 auto; margin-top:-4px; border:1px solid #b1b1b1; border-top:none; text-align:center;}
+.showDressText a i{color:#b39191; font-size:12px; font-family:"微软雅黑"; display:block;}
+.showDressText span{color:#c7c7c7; display:block; letter-spacing:2px;}
+.shadow{position:absolute;width:139px; height:65px; background:rgba(0,0,0,0.5); left:15px; bottom:36px; text-align:center;}
+.shadow p{line-height:65px; font-family:"方正卡通简体","叶根友非主流手","方正彩云简体";  font-size:18px; color:#fff;}
+
+/****团队活动*Actions****/
+.Actions{width:100%; margin-top:15px; background:url(../../images/longBg.png) no-repeat bottom; padding-bottom:50px;}
+.ActionsTitle{width:100%; height:35px; background:url(../../images/vipBg.png) no-repeat bottom;}
+.ActionsTitle h2{width:121px; height:35px; background:url(../../images/Actions.png) no-repeat center; text-indent:-9999px; margin-left:12px;}
+.ActionsTitle a{width:50px; height:20px; display:block;background:url(../../images/juiceMore.png) no-repeat; margin-right:65px; text-indent:-9999px; margin-top:8px;}
+.ActionsLeft{width:450px;margin-top:18px; background:url(../../images/actionBg.png) no-repeat right;}
+.ActionShowTxt{width:300px; height:89px;}
+.ActionShowTxt h4{font-weight:bold; color:#f86e9e; margin-top:5px; font-size:15px; padding-left:22px;}
+.ActionShowTxt p{color:#5a5a5a; line-height:160%; padding-right:50px;  padding-left:15px; font-size:13px; font-family:"微软雅黑";}
+.ActionsList{width:450px;  margin-top:8px;}
+.ActionsList li{padding-left:28px; line-height:180%;background:url(../../images/listBg.png) no-repeat 8px center;}
+.ActionsList li a{ color:#5a5a5a; font-size:13px;}.ActionsList li a:hover{color:#f86e9e; font-weight:bolder;}
+
+.ActionsRight{width:400px;margin-top:18px;}
+.ActionsRight h4{font-weight:bold; color:#f86e9e; margin-top:2px; font-size:15px; padding-left:38px;}
+.lisRight{margin-top:6px; width:380px; margin-left:10px;}
+.lisRight li{border-bottom:1px dashed #bfbfbf; line-height:225%; width:320px;}
+
+/***********内容右部分**container-right**********/
+#container-right{width:360px; margin-top:12px; }
+/****炫耀爱情*showLove****/
+.showLove{width:100%; margin-top:10px; border-bottom:2px solid #f2f2f2;}
+.showLoveTitle{width:100%; height:35px;border-bottom:2px solid #dfdfdf;}
+.showLove h2{width:165px; height:35px;background:url(../../images/showLove.png) no-repeat center; text-indent:-9999px;margin-left:12px;}
+.showLoveMenu{width:100%; margin-top:12px; padding-bottom:15px; }
+.showLoveMenu li{margin-top:12px;}
+.showLoveMenu li img{width:117px; height:60px; border:2px solid #dbdbdb; border-radius:4px; margin-left:2px;}
+.wedding{width:215px; height:60px;}
+.wedding h4{color:#f86e9e; text-indent:1.8em; padding-top:4px; background:url(../../images/pinkIcon.png) no-repeat 8px 8px;}
+.wedding p{text-indent:1.8em; color:#7e7e7e; font-size:13px; line-height:160%;}
+.ReadTime{width:100%; height:35px; background:#f7f7f7; line-height:35px; margin-top:8px;}
+.ReadTime span{color:#7e7e7e; padding-left:25px;}
+.ReadTime a{display:block; color:#f86e9e; font-size:15px; font-weight:bold; padding-right:15px;}
+
+/**************联系我们在form.css样式表中*********************/
+
+/**********footer**********/
+#footer{width:100%;height:386px; background:url(../../images/footerBg.png); margin-top:12px;}
+.below{width:1240px; margin:0 auto;}
+
+/********关于纳兰*AboutNalan********/
+.AboutNalan{width:413px; height:272px;}
+.AboutNalanTitle{width:280px; height:30px;background:#222; margin:15px auto;}
+.AboutNalanTitle h2{width:149px; height:30px;background:url(../../images/AboutNalan.png) no-repeat center; text-indent:-9999px; margin-left:2px;}
+.AboutNalanTitle a{width:60px ;height:30px;background:url(../../images/blackMore.png) no-repeat;text-indent:-9999px;}
+.summary{width:280px; height:200px; margin:0 auto;}
+.summary p{color:#b8b8b8; text-indent:2em; padding-top:10px; font-size:13px; line-height:150%; font-family:"微软雅黑";}
+
+/********我们的团队*Ourteam********/
+.Ourteam{width:413px; height:272px;}
+.OurteamTitle{width:280px; height:30px; background:#222; margin:15px auto;}
+.OurteamTitle h2{width:137px; height:30px; background:url(../../images/Ourteam.png) no-repeat center; text-indent:-9999px; margin-left:2px;}
+.OurteamTitle a{width:60px ;height:30px;background:url(../../images/blackMore.png) no-repeat;text-indent:-9999px;}
+.Stylist{width:294px; margin:0 auto;}
+.Stylist li{float:left; position:relative;}
+.Stylist li img{float:left; border:none;}
+.Allen{position:absolute; bottom:0; width:98px; height:20px; background:rgba(0,0,0,0.5); text-align:center;}
+.Allen p{font-size:11px; color:#f86e9e; line-height:20px; font-family:"微软雅黑";}
+
+/********快捷入口*Quickentry********/
+.QuickEntry{width:413px; height:272px;}
+.QuickEntryTitle{width:280px; height:30px; background:#222; margin:15px auto;}
+.QuickEntryTitle h2{width:139px; height:30px; background:url(../../images/quickEntry.png) no-repeat center; text-indent:-9999px; margin-left:2px;}
+.QuickEntryTitle a{width:60px ;height:30px;background:url(../../images/blackMore.png) no-repeat;text-indent:-9999px;}
+.QuickUrl{width:280px; height:200px; margin:0 auto;}
+.QuickUrl li a{display:block; line-height:190%; padding-left:25px; color:#b8b8b8; font-family:"微软雅黑"; font-size:13px;}
+.QuickUrl li a:hover{font-weight:bolder; color:#f86e9e;}
+
+/**********版权所有*Copy**********/
+.CopyRight{width:1240px; height:114px; margin:0 auto;text-align:center;}
+.CopyRight p{color:#919191; padding-top:25px; line-height:160%; font-family:"微软雅黑";}
+
+
+
